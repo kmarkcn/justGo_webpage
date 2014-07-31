@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body{margin:0;paddding:0;font-size:12px;color:#666;line-height:20px;font-family:"宋体";}
+ul,li,dl,dt,dd{list-style:none;margin:0;padding:0;}
+table{border:0;margin:0;border-collapse:collapse;} table th, table td{padding:0;})
+.pubbox{width:1002px;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+img,input{border:0;margin:0;padding:0;vertical-align:middle;}              
+a{text-decoration:none;color:#666;}
+.clear{line-height:0;clear:both;font-size:0;height:0;}
+.yh{font-family:"微软雅黑", "黑体", "宋体";}
+.f14{font-size:14px;}
+.blue{color:blue;}
+.red{color:red;}
+.orange{color:#ff6600;}
+.hs{color:#999999;}
+img{vertical-align:middle;border:none;}
+.pad10{padding:10px;}
+.underline{text-decoration:underline;}
+.c12{line-height:0;clear:both;font-size:0;height:12px;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;overflow:hidden;}
+.clearfix{zoom:1;}
+.none{ display:none;}
+.red_12{ color:#FE0133; font-size:12px;}
+.f12{ font-size:12px;}
+.public_border_blue{ border:1px solid #a5c3ff !important;}
+body .public_border_red{ border:1px solid red !important;}
+
+
+
+
+
+
+

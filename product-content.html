@@ -1,0 +1,116 @@
+<!DOCTYPE HTML> 
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="css/product-content.css" />
+<link rel="stylesheet" type="text/css" href="css/public.css" />
+<!-- <link href="css/slides_home.css" rel="stylesheet"/> -->
+<!-- In-document CSS -->
+<style>
+
+</style>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/product-content.js"></script>
+<script type="text/javascript" src="js/jquery.flipcountdown.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.flipcountdown.css" />
+
+
+<title>当前旅游产品</title>
+</head>
+
+<body>
+	<div class="head">    	
+        <h1 class="head-h1">神奇泰国五日游<input type='hidden' value='6' id='cal_total_days'></h1> 
+        <a class="head-l"  href="#">
+        	<img src="img/details/details4.png">
+        </a>
+        <div class="head-r">
+        	<div class="head-r-child">
+            	<span class="b-triangle"></span>
+            </div>
+            <ul class="head-nav">
+            	<li class="li1"><a>第一天</a></li>
+                
+                <!--<li class="head-nav-li"><a>第二天</a></li>
+                <li class="head-nav-li"><a>第二天</a></li>-->
+            </ul>
+        </div>
+        
+        	
+    </div>
+    <div class="content">
+    	<div class="pc-goods">
+        	<img  class="pc-img" src="img/details/details1.png">
+            <p>
+            	<span>唐人街</span><br>
+                 唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街              
+            </p>
+        </div>
+        <div class="pc-goods">
+        	<img  class="pc-img" src="img/details/details1.png">
+            <p>
+            	<span>唐人街</span><br>
+                 唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街              
+            </p>
+        </div>
+        <div class="pc-goods">
+        	<img  class="pc-img" src="img/details/details1.png">
+            <p>
+            	<span>唐人街</span><br>
+                 唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街              
+            </p>
+        </div>
+        <div class="pc-goods">
+        	<img  class="pc-img" src="img/details/details1.png">
+            <p>
+            	<span>唐人街</span><br>
+                 唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街唐人街              
+            </p>
+        </div>
+    	    
+    </div>
+    <!--以下是底部确认支付按钮和倒计时-->
+    <div class="foot">
+                 <div style="text-align: right; padding-right: 5%">
+                <a href="#">
+                  <img src="img/product_list/confirm_button.png" width="30%">
+                </a>
+              </div>
+              <!-- product details banner | this area should have 2 dynamic functions one is a drop-down table and the another is a count down clock numbers.-->
+              <div style="background-color:#C7000a; height: 35px; margin: 0 5% 0 5%">
+              <!--<img src="img/product_list/detail_banner.png" width="60%"/> -->
+                <span id="detail_banner">
+                  说走价：1999 |  <span style="font: normal 12px '微软雅黑', sans-serif;">全网比价</span>  |
+                </span>
+                
+                <div style="text-align: right; display: inline; padding-top: 5px; padding-right: 5px; float:right;" id="product_timeleft"></div>
+                <script>
+                var NY = Math.round((new Date('7/19/2014 00:00:01')).getTime()/1000);
+                $('#product_timeleft').flipcountdown({
+                    tick:function(){
+                        var nol = function(h){
+                            return h>9?h:'0'+h;
+                        }
+                        var	range  	= NY-Math.round((new Date()).getTime()/1000),
+                            secday  = 86400, sechour = 3600,
+                            days 	= parseInt(range/secday),
+                            
+                            thours	= parseInt((range%secday)/sechour) + days*24,
+                            hours   = thours > 48 ? 48 : thours,
+                            min		= parseInt(((range%secday)%sechour)/60),
+                            sec		= ((range%secday)%sechour)%60;
+                        return nol(thours)+' '+nol(min)+' '+nol(sec);
+                    },
+                    size:"xs"
+                });
+                </script>
+              </div>
+    </div>
+  	<!--以上是底部确认支付按钮和倒计时-->
+  
+  
+</body>
+</html>
